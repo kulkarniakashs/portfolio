@@ -4,6 +4,8 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { FaInstagram, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import Projects from '@/components/Projects'
+import Education from '@/components/Education'
+import Navbar from '@/components/Navbar'
 
 export default function Home() {
   // Smooth scroll polyfill for older browsers can be added if needed
@@ -22,29 +24,7 @@ export default function Home() {
 
       <div className="min-h-screen bg-linear-to-b from-gray-50 via-white to-gray-100 text-gray-900">
         {/* NAVBAR */}
-        <nav className="fixed top-4 left-0 right-0 z-40 mx-auto max-w-6xl px-6">
-          <div className="backdrop-blur-sm bg-white/60 border border-gray-200 rounded-2xl shadow-sm p-3 flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-transparent hover:border-indigo-500 transition">
-                <img src="/profilePhoto.jpg" alt="profile" className="object-cover w-full h-full" />
-              </div>
-              <div>
-                <div className="font-semibold">Akash Kulkarni</div>
-                <div className="text-xs text-gray-600">Full Stack Developer</div>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <a href="#projects" className="px-3 py-2 rounded-md hover:bg-gray-100">Projects</a>
-              <a href="#education" className="px-3 py-2 rounded-md hover:bg-gray-100">Education</a>
-              <a href="#contact" className="px-3 py-2 rounded-md hover:bg-gray-100">Contact</a>
-              <a href="/resume.pdf" download className="ml-2 inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:shadow-md">
-                View Resume
-              </a>
-            </div>
-          </div>
-        </nav>
-
+        <Navbar />
         {/* HERO */}
         <header className="pt-28">
           <div className="max-w-6xl mx-auto px-6 flex gap-12 items-center">
@@ -89,12 +69,10 @@ export default function Home() {
         </header>
 
         <main className="mt-20">
-        {/* PROJECTS */}
-          <Projects/>
-
+          {/* PROJECTS */}
+          <Projects />
           {/* EDUCATION */}
-
-
+          <Education />
           {/* CONTACT / FOOTER */}
           <section id="contact" className="max-w-6xl mx-auto px-6 py-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -110,7 +88,7 @@ export default function Home() {
                     <FaGithub size={24} /> <span className="text-sm">GitHub</span>
                   </a>
                   <a href="https://leetcode.com" target="_blank" rel="noreferrer" className="flex items-center gap-2">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3l14 7-7 14L3 17 5 3z" fill="#111827"/></svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3l14 7-7 14L3 17 5 3z" fill="#111827" /></svg>
                     <span className="text-sm">LeetCode</span>
                   </a>
                 </div>
@@ -124,7 +102,7 @@ export default function Home() {
               </div>
 
               <div>
-                <form className="bg-white p-6 rounded-2xl border shadow-sm space-y-4" onSubmit={(e)=>{e.preventDefault(); alert('Thanks — this form is a demo. Hook up a backend to send messages.')}}>
+                <form className="bg-white p-6 rounded-2xl border shadow-sm space-y-4" onSubmit={(e) => { e.preventDefault(); alert('Thanks — this form is a demo. Hook up a backend to send messages.') }}>
                   <div>
                     <label className="text-sm font-medium">Name</label>
                     <input required className="mt-2 w-full border rounded-md p-3" placeholder="Your name" />
