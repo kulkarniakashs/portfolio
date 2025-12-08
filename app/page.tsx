@@ -1,7 +1,5 @@
 "use client"
-import Head from 'next/head'
 import { useEffect } from 'react'
-import { motion } from 'framer-motion'
 import Projects from '@/components/Projects'
 import Education from '@/components/Education'
 import Navbar from '@/components/Navbar'
@@ -18,11 +16,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Full Stack Developer — Portfolio</title>
-        <meta name="description" content="Full Stack Developer portfolio" />
-      </Head>
-
       <div className="min-h-screen bg-linear-to-b from-gray-50 via-white to-gray-100 text-gray-900">
         {/* NAVBAR */}
         <Navbar />
