@@ -1,8 +1,8 @@
 import { motion } from "framer-motion"
 export default function Hero() {
     return (
-        <header className="pt-28">
-            <div className="max-w-6xl mx-auto px-6 flex gap-12 items-center">
+        <header className="h-screen pt-[10vh] md:pt-0 flex flex-col justify-center">
+            <div className="flex gap-6 flex-col-reverse mx-auto px-6 md:max-w-6xl md:gap-12 md:flex-row items-center">
                 <motion.section
                     className="flex-1"
                     initial={{ opacity: 0, x: -40 }}
@@ -31,13 +31,8 @@ export default function Hero() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6 }}
                 >
-                    <div className="rounded-3xl overflow-hidden border border-gray-200 shadow-lg bg-white">
-                        <img src="/profilePhoto.jpg" alt="Your Photo" className="w-full h-96 object-cover" />
-                        <div className="p-4">
-                            <div className="font-semibold">Your Name</div>
-                            <div className="text-sm text-gray-600">Full Stack Developer</div>
-                            <div className="mt-2 text-sm text-gray-700">Open to opportunities • Available for freelance</div>
-                        </div>
+                    <div className="w-55 h-55 md:w-85 md:h-85 rounded-full overflow-hidden border-4 border-indigo-200 shadow-lg bg-white mx-auto">
+                        <img src="/photo.jpg" alt="Profile Picture" className="w-full h-full object-cover" />
                     </div>
                 </motion.aside>
             </div>

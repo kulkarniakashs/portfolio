@@ -13,7 +13,7 @@ export default function Education() {
                 <div className="space-y-8 pl-10">
                     {education.map((edu, idx) => (
                         <div key={idx} className="relative">
-                            <div className="absolute left-[-28px] top-2 w-12 h-12 rounded-full flex items-center justify-center bg-indigo-50 border border-indigo-200">
+                            <div className="absolute -left-7 top-2 w-12 h-12 rounded-full flex items-center justify-center bg-indigo-50 border border-indigo-200">
                                 <div className="text-sm font-semibold text-indigo-600">{edu.year}</div>
                             </div>
 

@@ -21,7 +21,6 @@ export default function Home() {
         <Navbar />
         {/* HERO */}
         <Hero />
-
         <main className="mt-20">
           {/* PROJECTS */}
           <Projects />
