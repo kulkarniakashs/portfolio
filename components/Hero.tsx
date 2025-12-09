@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 export default function Hero() {
     return (
-        <header className="h-screen pt-[10vh] md:pt-0 flex flex-col justify-center">
+        <header className="h-screen flex flex-col justify-center">
             <div className="flex gap-6 flex-col-reverse mx-auto px-6 md:max-w-6xl md:gap-12 md:flex-row items-center">
                 <motion.section
                     className="flex-1"
@@ -10,9 +10,11 @@ export default function Hero() {
                     transition={{ duration: 0.6 }}
                 >
                     <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-                        Hi, I am <span className="text-indigo-600">Akash Kulkarni</span>
-                        <br />
-                        Full Stack Developer
+                        <div className="flex flex-col lg:flex-row">
+                            <div>Hi, I am&nbsp;</div>
+                            <div className="text-indigo-600">Akash Kulkarni</div>
+                        </div>
+                        <div>Full Stack Developer</div>
                     </h1>
 
                     <p className="mt-6 text-lg text-gray-700 max-w-xl">
