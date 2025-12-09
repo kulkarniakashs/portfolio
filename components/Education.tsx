@@ -1,6 +1,6 @@
 const education = [
-    { year: '2022', title: "Master's in Computer Science", inst: 'ABC University', details: 'Specialization: Software Engineering' },
-    { year: '2020', title: "Bachelor's in Engineering", inst: 'XYZ College', details: 'Department of Computer Science' },
+    { start: '2022', end: '2026', title: "B.Tech in Computer Science and Engineering", inst: 'G H Raisoni College of Engineering and Management', details: 'CGPA: 8.7/10' },
+    { start: '2022', end: '2022', title: "Bachelor's in Engineering", inst: 'XYZ College', details: 'Department of Computer Science' },
 ]
 export default function Education() {
     return (
@@ -14,13 +14,18 @@ export default function Education() {
                     {education.map((edu, idx) => (
                         <div key={idx} className="relative">
                             <div className="absolute -left-7 top-2 w-12 h-12 rounded-full flex items-center justify-center bg-indigo-50 border border-indigo-200">
-                                <div className="text-sm font-semibold text-indigo-600">{edu.year}</div>
+                                <div className="text-sm font-semibold text-indigo-600">{edu.end}</div>
                             </div>
 
                             <div className="bg-white p-6 rounded-2xl border shadow-sm">
-                                <div className="font-semibold text-xl">{edu.title}</div>
-                                <div className="text-sm text-gray-600">{edu.inst}</div>
-                                <p className="mt-2 text-gray-700">{edu.details}</p>
+                                <div className="flex justify-between items-center">
+                                    <div >
+                                        <div className="font-semibold text-xl">{edu.title}</div>
+                                        <div className="text-sm text-gray-500">{edu.inst}</div>
+                                    </div>
+                                    <div className="text-sm text-slate-400">{edu.start + ' - ' + edu.end}</div>
+                                </div>
+                                {edu.details && <p className="mt-2 text-slate-600 text-sm">{edu.details}</p>}
                             </div>
                         </div>
                     ))}
