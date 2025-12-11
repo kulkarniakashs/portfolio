@@ -5,6 +5,7 @@ import Education from '@/components/Education'
 import Navbar from '@/components/Navbar'
 import Contact from '@/components/Contact'
 import Hero from '@/components/Hero'
+import Skills from '@/components/Skills'
 
 export default function Home() {
   // Smooth scroll polyfill for older browsers can be added if needed
@@ -24,6 +25,7 @@ export default function Home() {
         <main className="mt-20">
           {/* PROJECTS */}
           <Projects />
+          <Skills />
           {/* EDUCATION */}
           <Education />
           {/* CONTACT / FOOTER */}

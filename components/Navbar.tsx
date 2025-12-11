@@ -18,7 +18,7 @@ export default function Navbar() {
 
                 <div className="hidden md:flex items-center gap-4">
                     <a href="#projects" className="px-3 py-2 rounded-md hover:bg-gray-100">Projects</a>
-                    <a href="#education" className="px-3 py-2 rounded-md hover:bg-gray-100">Education</a>
+                    <a href="#skills" className="px-3 py-2 rounded-md hover:bg-gray-100">Skills</a>
                     <a href="#contact" className="px-3 py-2 rounded-md hover:bg-gray-100">Contact</a>
                     <a href="/resume.pdf" download className="ml-2 inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:shadow-md">
                         View Resume
@@ -63,7 +63,7 @@ export default function Navbar() {
                             <div className="mx-auto max-w-6xl px-6">
                                 <div className="bg-white/95 border border-gray-200 rounded-2xl shadow-sm p-4 space-y-3 max-h-[60vh] overflow-auto">
                                     <a href="#projects" onClick={() => setOpen(false)} className="block px-3 py-2 rounded-md hover:bg-gray-100">Projects</a>
-                                    <a href="#education" onClick={() => setOpen(false)} className="block px-3 py-2 rounded-md hover:bg-gray-100">Education</a>
+                                    <a href="#skills" onClick={() => setOpen(false)} className="block px-3 py-2 rounded-md hover:bg-gray-100">Skills</a>
                                     <a href="#contact" onClick={() => setOpen(false)} className="block px-3 py-2 rounded-md hover:bg-gray-100">Contact</a>
                                     <a href="/resume.pdf" download onClick={() => setOpen(false)} className="block px-3 py-2 rounded-md bg-indigo-600 text-white text-center">View Resume</a>
                                 </div>
