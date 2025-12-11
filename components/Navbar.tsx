@@ -20,7 +20,7 @@ export default function Navbar() {
                     <a href="#projects" className="px-3 py-2 rounded-md hover:bg-gray-100">Projects</a>
                     <a href="#skills" className="px-3 py-2 rounded-md hover:bg-gray-100">Skills</a>
                     <a href="#contact" className="px-3 py-2 rounded-md hover:bg-gray-100">Contact</a>
-                    <a href="/resume.pdf" download className="ml-2 inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:shadow-md">
+                    <a href="/AkashKulkarni.pdf" className="ml-2 inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:shadow-md">
                         View Resume
                     </a>
                 </div>
@@ -46,7 +46,7 @@ export default function Navbar() {
                         <a href="#projects" onClick={() => setOpen(false)} className="block px-3 py-2 rounded-md hover:bg-gray-100">Projects</a>
                         <a href="#education" onClick={() => setOpen(false)} className="block px-3 py-2 rounded-md hover:bg-gray-100">Education</a>
                         <a href="#contact" onClick={() => setOpen(false)} className="block px-3 py-2 rounded-md hover:bg-gray-100">Contact</a>
-                        <a href="/resume.pdf" download onClick={() => setOpen(false)} className="block px-3 py-2 rounded-md bg-indigo-600 text-white text-center">View Resume</a>
+                        <a href="/AkashKulkarni.pdf" download onClick={() => setOpen(false)} className="block px-3 py-2 rounded-md bg-indigo-600 text-white text-center">View Resume</a>
                     </div>
                 </motion.div> */}
 
@@ -65,7 +65,7 @@ export default function Navbar() {
                                     <a href="#projects" onClick={() => setOpen(false)} className="block px-3 py-2 rounded-md hover:bg-gray-100">Projects</a>
                                     <a href="#skills" onClick={() => setOpen(false)} className="block px-3 py-2 rounded-md hover:bg-gray-100">Skills</a>
                                     <a href="#contact" onClick={() => setOpen(false)} className="block px-3 py-2 rounded-md hover:bg-gray-100">Contact</a>
-                                    <a href="/resume.pdf" download onClick={() => setOpen(false)} className="block px-3 py-2 rounded-md bg-indigo-600 text-white text-center">View Resume</a>
+                                    <a href="/AkashKulkarni.pdf" onClick={() => setOpen(false)} className="block px-3 py-2 rounded-md bg-indigo-600 text-white text-center">View Resume</a>
                                 </div>
                             </div>
                         </motion.div>

@@ -23,7 +23,7 @@ export default function Hero() {
 
                     <div className="mt-8 flex gap-4">
                         <a href="#projects" className="inline-flex items-center gap-2 px-5 py-3 bg-indigo-600 text-white rounded-lg shadow hover:scale-[1.02]">See Projects</a>
-                        <a href="/resume.pdf" className="inline-flex items-center gap-2 px-5 py-3 border rounded-lg">Download Resume</a>
+                        <a href="/AkashKulkarni.pdf" download className="inline-flex items-center gap-2 px-5 py-3 border rounded-lg">Download Resume</a>
                     </div>
                 </motion.section>
 
