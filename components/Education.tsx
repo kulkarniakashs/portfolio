@@ -1,6 +1,6 @@
 const education = [
     { start: '2022', end: '2026', title: "B.Tech in Computer Science and Engineering", inst: 'G H Raisoni College of Engineering and Management', details: 'CGPA: 8.7/10' },
-    { start: '2022', end: '2022', title: "Bachelor's in Engineering", inst: 'XYZ College', details: 'Department of Computer Science' },
+    { start: '2021', end: '2022', title: "HSC", inst: 'Rajarshi Shahu Junior Science College, Latur', details: '' },
 ]
 export default function Education() {
     return (
