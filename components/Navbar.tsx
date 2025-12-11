@@ -4,7 +4,7 @@ import { useState } from "react"
 export default function Navbar() {
     const [open, setOpen] = useState(false)
     return (
-        <nav className="fixed top-4 left-0 right-0 z-40 mx-auto max-w-6xl px-6">
+        <nav className="absolute top-4 left-0 right-0 z-40 mx-auto max-w-6xl px-6">
             <div className="backdrop-blur-sm bg-white/60 border border-gray-200 rounded-2xl shadow-sm p-3 flex items-center justify-between">
                 <div className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-transparent hover:border-indigo-500 transition">

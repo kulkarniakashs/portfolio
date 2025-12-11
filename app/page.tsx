@@ -18,10 +18,12 @@ export default function Home() {
   return (
     <>
       <div className="min-h-screen bg-linear-to-b from-gray-50 via-white to-gray-100 text-gray-900">
+        <div className='relative h-screen'>
         {/* NAVBAR */}
         <Navbar />
         {/* HERO */}
         <Hero />
+        </div>
         <main className="mt-20">
           {/* PROJECTS */}
           <Projects />

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 export default function Hero() {
     return (
-        <header className="h-screen flex flex-col justify-center">
+        <header className="h-full flex flex-col justify-center">
             <div className="flex gap-6 flex-col-reverse mx-auto px-6 md:max-w-6xl md:gap-12 md:flex-row items-center">
                 <motion.section
                     className="flex-1"
