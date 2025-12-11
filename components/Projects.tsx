@@ -1,10 +1,10 @@
 import { motion } from "framer-motion"
 export default function Projects() {
     const projects = [
-        { title: 'SyncChat: Real-time chat application', desc: 'Short description of project one', tech: 'Next.js • Node • MongoDB Ws', repo: "", live: "" },
-        { title: 'Project Two', desc: 'Short description of project two', tech: 'React • Express • MySQL', repo: "", live: "" },
-        { title: 'Project Three', desc: 'Short description of project three', tech: 'TensorFlow • Python', repo: "", live: "" },
-        { title: 'Project Four', desc: 'Short description of project four', tech: 'React Native • Firebase', repo: "#", live: "#" },
+        { title: 'SyncChat: Real-Time Chat Platform', desc: 'Scalable real-time chat platform with group and private messaging built on a Pub/Sub architecture.', tech: 'Next.js • Express.js • Prisma • WebSocket • Redis • Redux', repo: "https://github.com/kulkarniakashs/SyncChat", live: "" },
+        { title: 'StudyPal — AI Study Companion', desc: 'Ask study questions and get clear, structured answers instantly—save, share, and revisit your chats securely.', tech: 'Next.js • Redux • MongoDB • Mongoose • Gemini API', repo: "https://github.com/kulkarniakashs/StudyPal", live: "https://studypal-akash.vercel.app" },
+        { title: 'Postly — A Blogging Platform', desc: 'A blogging that enables users to publish posts, view writer profiles, and personalize their feed by following the authors they enjoy.', tech: 'React.js • Hono • Prisma • Zod • Node.js', repo: "https://github.com/kulkarniakashs/StudyPal", live: "" },
+        { title: 'TaskBot', desc: 'A full-stack productivity tool featuring task management, AI chatbot, and NLP-based text summarization.', tech: 'React.js • Flask • Python • Gemini API', repo: "https://github.com/kulkarniakashs/taskbot", live: "" },
         // add more projects as needed
     ]
     return (
